@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/app_default_settings">
+        <ListPreference
+            android:defaultValue="500 M"
+            android:entries="@array/nearmedistances"
+            android:entryValues="@array/nearmedistances"
+            android:key="default_distance"
+            android:summary="Show faculties within x distance"
+            android:title="Default Distance" />
+
+
+        <ListPreference
+            android:defaultValue="Display All"
+            android:entries="@array/launcher_pages"
+            android:entryValues="@array/launcher_pages"
+            android:key="default_page"
+            android:summary="Launch this page on app start"
+            android:title="Default Page" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/app_ranking_settings">
+        <SwitchPreference
+            android:key="custom_ranking"
+            android:summary="Control which restaurants will show up on the top of the list!"
+            android:title="Customize rank and order"
+            >
+
+        </SwitchPreference>
+
+        <ListPreference
+            android:dependency="custom_ranking"
+            android:defaultValue="2"
+            android:entries="@array/crit_weight"
+            android:entryValues="@array/crit_weight"
+            android:key="crit_weight"
+            android:summary="Each critical infraction is equal to x non-critical infractions"
+            android:title="Critical Infraction Weighting" />
+
+        <ListPreference
+            android:dependency="custom_ranking"
+            android:defaultValue="1 non-critical infraction"
+            android:entries="@array/margin_error"
+            android:entryValues="@array/margin_error"
+            android:key="margin_error"
+            android:summary="Anything below this amount will be considered as half its original weight"
+            android:title="Margin of Error" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

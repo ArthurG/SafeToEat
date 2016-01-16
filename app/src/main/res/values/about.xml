@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "heading1">Data</string>
+    <string name = "value1">
+         All the data for this application was retrieved from Region of Waterloo\'s open data portal. Please contact them at 519-575-4400 ext. 5147 (Monday to Friday, 8:30 a.m. - 4:30 p.m.). You can also direct emails to publichealth@regionofwaterloo.ca
+    </string>
+    <string name = "heading2">Terms of use</string>
+    <string name = "value2">
+         Information on this app is provided solely for the user\'s information and it is provided without warranty, guarantee, or responsibility of any kind, either expressed or implied.
+    </string>
+    <string name = "heading3">Open Source</string>
+    <string name = "value3">
+        The source code for this application is availiable at https://github.com/guoarthur/SafeToEat .
+    </string>
+
+
+</resources>

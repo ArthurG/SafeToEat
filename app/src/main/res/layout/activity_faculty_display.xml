@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arthur_guo.SafeToEat.FacultyDisplay"
+    android:orientation="vertical">
+
+    <include layout="@layout/restaurantinfoheader"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/faculty_buttons">
+
+                <ImageButton
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty_call"
+                    android:src="@drawable/ic_local_phone_black_24dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty_navigate"
+                    android:src="@drawable/ic_navigation_black_24dp"
+                    android:layout_weight="1" />
+
+
+                <ImageButton
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty_search"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:layout_weight="1" />
+
+                 <ImageButton
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty_bookmark"
+                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/faculty_infractions_list"></LinearLayout>
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/mapfragment"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- End faculty_display_title-->
+</LinearLayout>

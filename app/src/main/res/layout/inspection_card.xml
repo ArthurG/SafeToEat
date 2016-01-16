@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:id="@+id/carRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/faculty_inspection_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="2015/08/01"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/faculty_inspection_crit_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_inspection_date"
+                android:text="Critical Infractions: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/faculty_inspection_crit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_inspection_date"
+                android:layout_toRightOf="@+id/faculty_inspection_crit_header"
+                android:text="2"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/faculty_inspection_noncrit_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_inspection_crit"
+                android:text="Non-critical Infractions: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/faculty_inspection_noncrit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_inspection_crit"
+                android:layout_toRightOf="@+id/faculty_inspection_noncrit_header"
+                android:text=" 2"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

@@ -7,3 +7,4 @@ This was written in Android Studio with Java and Android SDK. This also uses Goo
 #About
 Open Data was retrieved from [Region of Waterloo Open Data portal](http://www.regionofwaterloo.ca/en/regionalgovernment/OpenDataHome.asp). 
 Application created by Arthur Guo
+This app is availiable in the Google Play store Todo: Link

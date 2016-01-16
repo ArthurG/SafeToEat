@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        >
+
+        <RelativeLayout
+            android:id="@+id/carRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:id="@+id/infraction_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Critical"
+                android:textSize="15sp"
+                android:layout_marginRight="100px" />
+
+            <TextView
+                android:id="@+id/infraction_card_descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Failed to do this"
+                android:layout_below="@+id/infraction_card_type"
+                android:textSize="18sp"
+                android:layout_marginRight="100px" />
+
+            <TextView
+                android:id="@+id/infraction_card_descrip_specifics"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infraction_card_descrip"
+                android:text="-didn't wash hands "
+                android:textSize="15sp"
+                android:layout_marginRight="100px"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/infraction_card_alert"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_report_problem_black_24dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</FrameLayout>

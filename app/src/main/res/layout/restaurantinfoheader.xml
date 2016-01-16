@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/primaryColor"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/restaurant_header_title"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            tools:text="I am a fake restaurnt"
+            android:id="@+id/restaurant_header_name"
+            android:textColor="@color/primary_text_default_material_dark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:text="1234 Fake Street"
+            android:id="@+id/restaurant_header_address"
+            android:textColor="@color/secondary_text_default_material_dark"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/restaurant_header_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:gravity="center_vertical|center_horizontal"
+        tools:text="6"
+        android:textColor="#ffffff"
+        android:background="@drawable/circle"
+        android:textSize="20sp"
+        android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="out of 10"
+            android:id="@+id/out_of_text"
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="12sp"
+            android:layout_alignBottom="@+id/restaurant_header_rating"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

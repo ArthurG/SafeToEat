@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <android.support.v7.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,7 +22,7 @@
                 android:id="@+id/infraction_card_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Critical"
+                tools:text="Critical Infraction"
                 android:textSize="15sp"
                 android:layout_marginRight="100px" />
 
@@ -28,7 +30,7 @@
                 android:id="@+id/infraction_card_descrip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Failed to do this"
+                tools:text="The error that was made"
                 android:layout_below="@+id/infraction_card_type"
                 android:textSize="18sp"
                 android:layout_marginRight="100px" />
@@ -38,7 +40,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/infraction_card_descrip"
-                android:text="-didn't wash hands "
+                tools:text="Steps you can do to correct it"
                 android:textSize="15sp"
                 android:layout_marginRight="100px"/>
 

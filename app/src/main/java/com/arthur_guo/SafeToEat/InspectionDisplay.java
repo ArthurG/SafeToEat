@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -41,6 +42,8 @@ public class InspectionDisplay extends ActionBarActivity {
         ((TextView) findViewById(R.id.inspection_display_date)).setText(inspection.inspectionDateString);
         //Set infraction details
         LinearLayout infractions = (LinearLayout) findViewById(R.id.inspection_display);
+        int critIcon = getResources().getIdentifier("@drawable/danger",null,getPackageName());
+        int noncritIcon = getResources().getIdentifier("@drawable/danger",null,getPackageName());
         for (int i = 0;i<inspection.criticalList.size();i++){
             Infraction infraction = inspection.criticalList.get(i);
             LayoutInflater inflater = LayoutInflater.from(this);
@@ -48,6 +51,7 @@ public class InspectionDisplay extends ActionBarActivity {
             ((TextView) view.findViewById(R.id.infraction_card_type)).setText("Critical infraction");
             ((TextView) view.findViewById(R.id.infraction_card_descrip)).setText(infraction.getDescription());
             ((TextView) view.findViewById(R.id.infraction_card_descrip_specifics)).setText(infraction.getCategory_code());
+            ((ImageView) view.findViewById(R.id.infraction_card_alert)).setImageResource(R.drawable.danger);
             infractions.addView(view);
         }
         for (int i = 0;i<inspection.nonCriticalList.size();i++){
@@ -57,6 +61,7 @@ public class InspectionDisplay extends ActionBarActivity {
             ((TextView) view.findViewById(R.id.infraction_card_type)).setText("Non-critical infraction");
             ((TextView) view.findViewById(R.id.infraction_card_descrip)).setText(infraction.getDescription());
             ((TextView) view.findViewById(R.id.infraction_card_descrip_specifics)).setText(infraction.getCategory_code());
+            ((ImageView) view.findViewById(R.id.infraction_card_alert)).setImageResource(R.drawable.warning);
             infractions.addView(view);
         }
         /*

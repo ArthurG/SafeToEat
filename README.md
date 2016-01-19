@@ -9,4 +9,4 @@ Open Data was retrieved from [Region of Waterloo Open Data portal](http://www.re
 
 Application created by Arthur Guo
 
-Download this app in the Google Play Store! Todo: Link
+Download this app in the [Google Play Store](https://play.google.com/store/apps/details?id=com.arthur_guo.restaurantsafety)! 

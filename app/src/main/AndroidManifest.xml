@@ -23,7 +23,7 @@ z
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="@string/map-api-v2" />
+            android:value="@string/goog_map_key" />
 
         <activity
             android:name=".FacultyDisplay"

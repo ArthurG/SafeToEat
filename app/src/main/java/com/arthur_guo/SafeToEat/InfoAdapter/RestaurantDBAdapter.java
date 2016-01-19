@@ -123,8 +123,8 @@ public class RestaurantDBAdapter{
         private static String DB_PATH = "/data/data/com.arthur_guo.restaurantsafety/databases/";
         private SQLiteDatabase db;
         private static String TAG = "DataBaseHelper"; // Tag just for the LogCat window
-        private static final String DATABASE_NAME = "RestaurantDb3.sqlite";
-        private static final int DATABASEVERSION = 10;
+        private static final String DATABASE_NAME = "RestaurantDB.sqlite";
+        private static final int DATABASEVERSION = 12;
         private static Context context;
 
         private static final String TABLE_INFRACTIONS = "infractions";
